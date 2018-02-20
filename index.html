@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>GamesGoal</title>
+	<meta name="author" content="Santiago Rengifo">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+</head> 
+<body onload="slider(),logged(),crearUsuarios()">
+
+	<!-- Menu -->
+	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" style="display: none;">
+	 </button>
+	<!-- Button trigger modal -->
+		<div class="modal fade" id="myModal">
+		    <div class="modal-dialog modal-sm">
+		      <div class="modal-content">
+		      
+		        <!-- Modal Header -->
+		        <div class="modal-header">
+		          <h4 class="modal-title">Oops</h4>
+		          <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        </div>
+		        
+		        <!-- Modal body -->
+		        <div class="modal-body">
+		        </div>
+		        
+		        <!-- Modal footer -->
+		        <div class="modal-footer">
+		          <button type="button" class="btn btn-primary" data-dismiss="modal">Vale</button>
+		        </div>
+		        
+		      </div>
+		    </div>
+		</div>
+
+		<!--Modal-->
+	<div class="menu" >
+		<div class="cerrar" >
+			<img src="img/iconos/close.png" alt="" title="Cerrar">
+		</div>
+		<div>
+			<form>
+				<label>¿Buscas algo?</label>
+				<input type="text" class="form-control entrada" placeholder="Buscar...">
+			</form>
+		</div>
+		<div class="objetos" >
+			<!-- Busquedas resultantes irán aquí -->
+		</div>
+		
+		
+	</div>
+	<div class="cuerpo container-fluid">
+		<div class="header container-fluid row">
+
+			
+			<div class="logo col-sm|md|lg|xl-auto">
+				<a href="">GamesGoal</a>
+			</div>
+			<div class="loggin">
+				<img src="img/iconos/avatar.png" alt="" title="Inicio sesion" class="img-fluid" >
+				<p>Inicia Sesion</p>
+			</div>
+			<div class=" carrito">
+				<img src="img/iconos/carrito-de-la-compra.png" alt="" title="Carrito" class="img-fluid">
+				<p>0</p>
+			</div>
+			<div class="buscar">
+				<img src="img/iconos/menu.png" alt="" title="Buscar" class="img-fluid">
+			</div>
+		</div>
+		<section class="container-fluid">
+			<article class="">
+				<!-- Primer Div-->
+				<div class="bienvenida">
+					<p>
+						<span>GamesGoal&#169;</span><br>
+						Somos una empresa especializada en la venta de teléfonos móviles libres de altas prestaciones y al mejor precio.Tenemos a disposición las mejores marcas, nuevos modelos y recien salidos al mercado con calidad y soporte garantizados.
+					</p>
+				</div>
+
+				<!--Carrusel de productos-->
+				<!-- Segundo Div-->
+				<div class="segDiv">
+					<div class="titulo row">
+						<h1 class="col-sm|md|lg|xl-auto">Recien llegados</h1>
+						<p class="col-sm|md|lg|xl-auto">Gama de productos que tienen una reciente salida al mercado con altas prestaciones</p>
+					</div>
+					<div class="contenedorCarrusel">
+						<div>
+							<img src="img/iconos/flechaI.png" class="mvI" alt="">
+						</div>
+						<div class="carrusel" >
+							<div>
+								<img src="img/GAMA_MEDIA/cute-galaxy.jpg" alt="">
+								<h3>Modelo Z</h3>
+								<div>
+									<h3>Modelo Z</h3>
+									<span class="btn btn-success">199€</span>
+									<span class="">3G </span>
+									<span class="">32GB</span>
+									<span class="">3000mA</span>
+									<a class='redirigir btn btn-danger'>Más</a>
+								</div>
+							</div>
+							<div>
+								<img src="img/GAMA_MEDIA/cute.jpg" alt="">
+								<h3>Modelo Z</h3>
+								<div>
+									<h3>Modelo Z</h3>
+									<span class="btn btn-success">199€</span>
+									<span class="">3G </span>
+									<span class="">32GB</span>
+									<span class="">3000mA</span>
+									<a class='redirigir btn btn-danger'>Más</a>
+								</div>
+							</div>
+							<div>
+								<img src="img/GAMA_MEDIA/iphone.jpg" alt="">
+								<h3>Modelo Z</h3>
+								<div>
+									<h3>Modelo Z</h3>
+									<span class="btn btn-success">199€</span>
+									<span class="">3G </span>
+									<span class="">32GB</span>
+									<span class="">3000mA</span>
+									<a class='redirigir btn btn-danger'>Más</a>
+								</div>
+							</div>
+							<div>
+								<img src="img/GAMA_MEDIA/cute-iphone.jpg" alt="">
+								<h3>Modelo Z</h3>
+								<div>
+									<h3>Modelo Z</h3>
+									<span class="btn btn-success">199€</span>
+									<span class="">3G </span>
+									<span class="">32GB</span>
+									<span class="">3000mA</span>
+									<a class='redirigir btn btn-danger'>Más</a>
+								</div>
+							</div>
+							<div>
+								<img src="img/GAMA_MEDIA/galaxy.jpg" alt="">
+								<h3>Modelo Z</h3>
+								<div>
+									<h3>Modelo Z</h3>
+									<span class="btn btn-success">199€</span>
+									<span class="">3G </span>
+									<span class="">32GB</span>
+									<span class="">3000mA</span>
+									<a class='redirigir btn btn-danger'>Más</a>
+								</div>
+							</div>
+							<div>
+								<img src="img/GAMA_MEDIA/super-iphone.jpg" alt="">
+								<h3>Modelo Z</h3>
+								<div>
+									<h3>Modelo Z</h3>
+									<span class="btn btn-success">199€</span>
+									<span class="">3G </span>
+									<span class="">32GB</span>
+									<span class="">3000mA</span>
+									<a class='redirigir btn btn-danger'>Más</a>
+								</div>
+							</div>
+						</div>
+						<div>
+							<img src="img/iconos/flechaD.png" class="mvD" alt="" >							
+						</div>
+					</div>
+
+					<div class="notas">
+						<p><i>*Los articulos expuestos son ejemplos y pueden no coincidir con el articulo físico*</i></p>
+					</div>
+				</div>
+
+				<!--Slider de productos innovadores-->
+				<!-- Tercer Div-->
+
+				<div class="container-fluid">
+
+					<div class="titulo row">
+						<h1 class="col-sm|md|lg|xl-auto">Innovaciones</h1>
+						<p class="col-sm|md|lg|xl-auto">Móviles que destacan por su incursión innovadora</p>
+					</div>
+					<div class="slidertrue">
+						<div class="">
+							<a class="btn btn-danger" href="#nada" title="3G RAM 16GB PROC-X " data-toggle="popover" data-trigger="focus" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit." data-placement="bottom">Mostrar mas</a>
+							<img src="img/GAMA_ALTA/hydrogen2.jpg" alt="" class="imagen" />
+						</div>
+						
+						<div>
+							<a class="btn btn-danger" href="#nada" title="3G RAM 16GB PROC-X " data-toggle="popover" data-trigger="focus" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit." data-placement="bottom">Mostrar mas</a>
+							<img src="img/GAMA_ALTA/hydrogen3.jpg" alt="" class="imagen img-fluid" />
+						</div>
+						<div>
+							<a class="btn btn-danger" href="#nada" title="3G RAM 16GB PROC-X " data-toggle="popover" data-trigger="focus" data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit." data-placement="bottom">Mostrar mas</a>
+							<img src="img/GAMA_ALTA/hydrogen.jpg" alt="" class="imagen img-fluid" />
+						</div> 
+					</div>
+					<div class="notas">
+						<p><i>*Los articulos anteriores tiene un stock muy limitado y al momento de compra pueden no estar disponibles*</i></p>
+					</div>
+				</div>
+
+				<!--Cuarto Div-->
+
+				<div class="contenedorBaraja container-fluid">
+					<div class="titulo row">
+						<h1 class="col-sm|md|lg|xl-auto">Imperdibles</h1>
+						<p class="col-sm|md|lg|xl-auto">Móviles que son muy apreciados y siempre permanecen con liston alto</p>
+					</div>
+					<div class="">
+						<div class="titulo">
+							<h2>Primeros siempre</h2>
+						</div>
+						<div class="row">
+							<div class="card col-md-3 col-sm-3 col-lg-3  ">
+								<img src="img/GAMA_MEDIA/cute-iphone.jpg" alt="" >
+								<div>
+									<h3>Modelo X</h3>
+									<span class="btn btn-success">199€</span>
+									<span class="btn btn-info">3G </span>
+									<span class="btn btn-info">32GB</span>
+									<span class="btn btn-info">3000mA</span>
+									<a class='redirigir btn btn-danger'>Más</a>
+								</div>
+								
+							</div>
+							<div class="card col-md-3 col-sm-3 col-lg-3  ">
+								<img src="img/GAMA_MEDIA/cute-iphone.jpg" alt="" >
+								<div>
+									<h3>Modelo X</h3>
+									<span class="btn btn-success">199€</span>
+									<span class="btn btn-info">3G </span>
+									<span class="btn btn-info">32GB</span>
+									<span class="btn btn-info">3000mA</span>
+									<a class='redirigir btn btn-danger'>Más</a>
+								</div>
+							</div>
+							<div class="card col-md-3 col-sm-3 col-lg-3  ">
+								<img src="img/GAMA_MEDIA/cute-iphone.jpg" alt="" >
+								<div>
+									<h3>Modelo X</h3>
+									<span class="btn btn-success">199€</span>
+									<span class="btn btn-info">3G </span>
+									<span class="btn btn-info">32GB</span>
+									<span class="btn btn-info">3000mA</span>
+									<a class='redirigir btn btn-danger'>Más</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="">
+						<div class="titulo" >
+							<h2>Inolvidables</h2>
+						</div>
+						<div class="row">
+							<div class="card col-md-3 col-sm-3 col-lg-3  ">
+								<img src="img/GAMA_MEDIA/galaxy.jpg" alt="" >
+								<div>
+									<h3>Modelo X</h3>
+									<span class="btn btn-success">199€</span>
+									<span class="btn btn-info">3G </span>
+									<span class="btn btn-info">32GB</span>
+									<span class="btn btn-info">3000mA</span>
+									<a class='redirigir btn btn-danger'>Más</a>
+								</div>
+							</div>
+							<div class="card col-md-3 col-sm-3 col-lg-3  ">
+								<img src="img/GAMA_MEDIA/galaxy.jpg" alt="" >
+								<div>
+									<h3>Modelo X</h3>
+									<span class="btn btn-success">199€</span>
+									<span class="btn btn-info">3G </span>
+									<span class="btn btn-info">32GB</span>
+									<span class="btn btn-info">3000mA</span>
+									<a class='redirigir btn btn-danger'>Más</a>
+								</div>
+							</div>
+							<div class="card col-md-3 col-sm-3 col-lg-3  ">
+								<img src="img/GAMA_MEDIA/galaxy.jpg" alt="" >
+								<div>
+									<h3>Modelo X</h3>
+									<span class="btn btn-success">199€</span>
+									<span class="btn btn-info">3G </span>
+									<span class="btn btn-info">32GB</span>
+									<span class="btn btn-info">3000mA</span>
+									<a class='redirigir btn btn-danger'>Más</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					
+
+					<div class="notas">
+						<p><i>*Los articulos expuestos son ejemplos y pueden no coincidir con el articulo físico*</i></p>
+					</div>
+
+
+				</div>
+
+				<div class="redes row container-fluid" >
+					<button class="redirigir btn btn-outline-danger">Youtube</button>
+					<button class="redirigir btn btn-outline-secondary">Instagram</button>
+					<button class="redirigir btn btn-outline-info">Twitter</button>
+				</div>
+				<!--  Footer  -->
+				<div class="cajaComentarios container-fluid" >
+					<div class="row titulo" >
+						<h1>Nuestros clientes dicen</h1>
+					</div>
+					<!--Comentarios de usuario-->
+					<div class="comentarios row" ></div>
+
+				</div>
+				<div class="entradaTexto ">
+					<div>
+						<h4>¿Te gustaria dejarnos un comentario? </h4>
+					</div>
+					<div class="cajaEnvioComentario">
+						 <div class="form-group">
+						  <label for="comment">Comenta:</label>
+						  <textarea class="form-control" rows="5" id="comment"></textarea>
+						</div> 
+						<button class="enviarComentario btn btn-danger">Comentar</button>
+					</div>
+				</div>
+			</article>
+			<div class="condiciones container-fluid">
+				<p>En complimiento del Real Decreto-ley 13/2012, si continua navegando estará aceptando el uso de cookies</p>
+				<a href="http://politicadecookies.com/">Mas información</a>
+			</div>
+
+		</section>
+		<footer class="container-fluid">
+					
+
+					<div class="row secciones">
+
+						<div class="footer-pad">
+							<h2>Sobre Nosotros</h2>
+							<ul class="list-unstyled">
+								<li><a class='redirigir'>Objetivos</a></li>
+								<li><a class='redirigir'>Modo de trabajo</a></li>
+								<li><a class='redirigir'>Valores</a></li>
+							</ul>
+						</div>
+						<div class="footer-pad">
+							<h2>Móviles</h2>
+							<ul class="list-unstyled">
+								<li><a class='redirigir'>Outlet</a></li>
+								<li><a class='redirigir'>Ofertas</a></li>
+								<li><a class='redirigir'>Catálogo</a></li>
+							</ul>
+						</div>
+						<div class="footer-pad">
+							<h2>Soporte</h2>
+							<ul class="list-unstyled">
+								<li><a class='redirigir'>Envios</a></li>
+								<li><a class='redirigir'>Garantias</a></li>
+								<li><a class='redirigir'>Perfil</a></li>
+								<li><a class='redirigir'>¿Necesitas ayuda?</a></li>
+							</ul>
+								
+						</div>
+						<div class="footer-pad">
+							<h2>Visitanos</h2>
+							<ul class="list-unstyled">
+								<li><a class='redirigir col'>Madrid</a></li>
+								<li><a class='redirigir col'>Valencia</a></li>
+							</ul>
+
+						</div>
+
+					</div>
+					<div class="reglas row">
+						<a class='redirigir'>Contacto</a>
+						<a class='redirigir'>Accesibilidad</a>
+						<a class='redirigir'>Politica de uso y privacidad</a>
+						<a href="index.html">GamesGoal&#169;</a>
+					</div>
+					<div class="subir">
+						<img src="img/iconos/right-chevron.png" alt="">
+					</div>
+					<div class="logo"><a href="">GamesGoal</div>
+				</footer>
+
+	</div>
+
+	
+
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/dom.js"></script>
+	<script src="js/busqueda.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		    $('[data-toggle="popover"]').popover();
+		});
+	</script>
+	<script src="formularios/js/scripts.js"></script>
+</body>
+</html>

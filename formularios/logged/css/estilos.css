@@ -1,0 +1,32 @@
+body {
+	background: #E6E2E2;
+}
+
+div {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+div.cuerpo {
+	margin: 5pc auto;
+	width: 80%;
+	border:1px solid grey;
+	border-radius: 5px;
+	max-width: 500px;
+}
+
+div.carta {
+	text-align: center;
+}
+
+span {
+	color:green;
+}
+
+
+div.carta p::first-letter {
+	text-transform: uppercase;
+}
+
+div.carta button {
+	margin: 10px 0px;
+}

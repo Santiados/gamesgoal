@@ -1,0 +1,38 @@
+{
+	"Modelo V":{
+		"Capacidad" : "32GB",
+		"Ram" : "3GB",
+		"Precio" : "199€",
+		"Resumen" : "Lorem loop back, loop blastoise, patata, astío, hestia, ONU, canicas"
+	},
+	"Modelo W":{
+		"Capacidad" : "32GB",
+		"Ram" : "3GB",
+		"Precio" : "199€",
+		"Resumen" : "Lorem loop back, loop blastoise, patata, astío, hestia, ONU, canicas"
+	},
+	"Modelo X":{
+		"Capacidad" : "32GB",
+		"Ram" : "3GB",
+		"Precio" : "199€",
+		"Resumen" : "Lorem loop back, loop blastoise, patata, astío, hestia, ONU, canicas"
+	},
+	"Modelo y" : {
+		"Capacidad" : "32GB",
+		"Ram" : "3GB",
+		"Precio" : "199€",
+		"Resumen" : "Lorem loop back, loop blastoise, patata, astío, hestia, ONU, canicas"
+	},
+	"Modelo Z" : {
+		"Capacidad" : "32GB",
+		"Ram" : "3GB",
+		"Precio" : "199€",
+		"Resumen" : "Lorem loop back, loop blastoise, patata, astío, hestia, ONU, canicas"
+	},
+	"Modelo Y" : {
+		"Capacidad" : "32GB",
+		"Ram" : "4GB",
+		"Precio" : "299€",
+		"Resumen" : "Lorem loop back, loop blastoise, patata, astío, hestia, ONU, canicas"
+	}
+}

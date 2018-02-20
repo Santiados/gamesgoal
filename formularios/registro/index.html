@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Registro</title>
+	<meta name="author" content="Santiago Rengifo">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+</head>
+<body onload="cargarMedianteDOM()">
+
+
+	<div class="container-fluid cuerpo">
+		<div class="contReg" >
+				<h1>GamesGoal</h1>
+				<h3>REGISTRO</h3>
+				<form action="../logged/index.html" class='formReg row'>
+					<div class="personales entradas form-group" >
+						<label>Introduce nombre y primer apellido *: </label>
+						<input type="text" pattern="(([A-Za-z]{3,15}\s[A-Za-z]{3,15})$){1}" required class="name form-control" placeholder="Ej: Lock Eres"><br>
+						<label>Introduce tu correo electronico *: </label>
+						<input type="email" required  class="email form-control" placeholder="example@qw.com"><br>
+						<label>Contraseña *: </label>
+						<input type="password" required class='pass form-control' onkeyup="comprobar()"><span class='alerta'></span><br>
+						<label>Confirmacion de contraseña *: </label>
+						<input type="password" required class="pass2 form-control"> <span class='alerta2'></span>
+					</div>
+					<div class="detalles entradas form-group" >
+						<label>Sexo</label>
+						<select class="form-control">
+							<optgroup label="Seleccione sexo" >
+							<option selected="selected" label="Selecione"></option>
+							<option>Femenino</option>
+							<option>Masculino</option>
+							</optgroup>
+						</select>
+						<br>
+						<div class='cajaNacimiento'>
+							<label>¿Desea dar su fecha de nacimiento?</label>
+							<input type="checkbox" class='check'><br>
+							<div class='nacimiento'>
+								<label>Fecha de nacimiento: </label>
+								<input type="date" min='1900-01-01' class='date'>
+							</div>
+						</div>
+						<br>
+						<label>Direccion: </label>
+						<input type="text" class='dir form-control' placeholder="Calle,Avenida..."><br>
+						<label>Pais: </label>
+						<select class='pais form-control'>
+						</select><br>
+						<div class='divTarjeta'>
+							<label>Numero de tarjeta de credito: </label><br>
+							<input type="number" class='tarjetaCredito form-control'>
+						</div>
+						<br>
+						<div>
+							<label>¿Desea recibir novedades?</label>
+							<input type="checkbox" class='novedades' ><br>
+							<label>¿Desea suscribirse a nuestra revista virtual?</label>
+							<input type="checkbox" class='revista'>
+						</div>
+					</div>
+					<div class="entradas">
+					Los campos marcados con un asterisco (*) son obligatorios
+					<input type="submit" class='send btn btn-danger' value="Registrarme">
+
+					</div>	
+				</form>
+				<button class="inicio btn btn-success">Quiero volver al login</button>
+		</div>
+	</div>
+	<script src="../js/jquery-3.2.1.js"></script>
+	<script src="../js/bootstrap/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/scripts.js"></script>
+	<script type="text/javascript" src="../../js/dom.js"></script>
+	<script type="text/javascript" src="../js/sha.js"></script>
+</body>
+</html>

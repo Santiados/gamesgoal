@@ -1,0 +1,58 @@
+div.cuerpo {
+	border-top:3px solid #26DA13;
+}
+
+div.contReg *{
+	margin: 1% auto;
+	transition: all 500ms ease;
+}
+
+div.contReg {
+	display: flex;
+	flex-direction: column;
+	margin: 10px auto;
+	max-width: 900px;
+	min-height: 700px;
+}
+
+
+
+form input{
+	border:0px;
+	border-bottom:2px solid red;
+}
+
+.nacimiento{
+	transition:all 200ms;
+	opacity:0; 
+	display:none;
+}
+.divTarjeta{
+	transition: all 200ms;
+	display: none;
+}
+form {
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+div.entradas select {
+	height: 100px;
+}
+
+div.entradas {
+	display: flex;
+	flex-direction: column;
+	margin: 40px auto;
+}
+
+div.personales {
+	border-radius: 2px;
+	border-top: 3px solid #5C9DCA;
+}
+
+div.detalles {
+	border-radius: 2px;
+	border-top: 3px solid #F4BF07;	
+}
